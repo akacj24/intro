@@ -10,3 +10,6 @@ En 2020 lanzó su álbum de estudio debut Sauce Boyz, el cual se posicionó en T
 
 image = Image.open("EladioCarrion.jpg")
 st.image(image, caption = "Eladio el bromas Carrion")
+
+texto = st.text_input("Escribe algo", "Este es mi texto")
+st.write("El texto escrito es", texto)
