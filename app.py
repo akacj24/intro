@@ -34,3 +34,15 @@ with col2:
     st.write("La audición es fundamental para tu interfaz")
   if modo == "Táctil":
     st.write("El tacto es fundamental para tu interfaz")
+
+st.subheader("Uso de botones")
+if st.button("Presiona el botón"):
+  st.write("Gracias por presionar")
+else:
+  st.write("No has presionado aún")
+
+with st.sidebar:
+  st.subheader("Configura la modalidad")
+  mod_radio = st.radio(
+    "Escoge la modalidad a usar",
+    ("Visual","Auditiva","Háptica")
